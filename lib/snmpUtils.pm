@@ -12,6 +12,9 @@ use SNMP_Session;
 use SNMP_util;
 use Sys::Hostname;
 
+# Cougar 20121203 - Wisi Chameleon SNMP fix
+$SNMP_Session::default_avoid_negative_request_ids = 1;
+
 # snmp_utils 0.55 has a reference to main::DEBUG, so we instantiate
 # it here, if necessary
 if (! defined($main::DEBUG)) {
