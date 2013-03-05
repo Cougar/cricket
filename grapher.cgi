@@ -2052,7 +2052,7 @@ sub htmlHeader {
     $h->{'auto-title'} = $title;
     ConfigTree::Cache::expandHash($h, $h, \&Warn);
 
-    print $gQ->header('text/html');
+    print $gQ->header(-type=>'text/html',-charset=>'utf-8');
     print "<html>\n";
     print "<head>\n";
     if ($h->{'head'}) {
