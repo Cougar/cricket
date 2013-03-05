@@ -738,7 +738,7 @@ sub sendEmail {
     my @Message;
     push @Message, "type:\t\t$type";
     push @Message, "threshold:\t$threshold";
-    push @Message, "target:\t$target";
+    push @Message, "target:\t\t$target";
     push @Message, "ds:\t\t$ds";
     if (defined($val))  {
         push @Message, "val:\t\t$val";
